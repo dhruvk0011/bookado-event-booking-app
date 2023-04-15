@@ -63,4 +63,4 @@ _GraphQL_ allows flexible and dynamic queries:
 
 ![*Authentication Page*](https://raw.githubusercontent.com/dhruvk0011/bookado-event-booking-app/main/assets/images/frontend.PNG)
 
-![*User Logged In*](https://raw.githubusercontent.com/dhruvk0011/bookado-event-booking-app/main/images/userLoggedIn.PNG)
+![*User Logged In*](https://raw.githubusercontent.com/dhruvk0011/bookado-event-booking-app/main/assets/images/userLoggedIn.PNG)
