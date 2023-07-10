@@ -13,21 +13,15 @@ module.exports = (req, res, next) => {
     req.isAuth = false;
     return next();
   }
-  let decodedToken;
   try {
     console.log(token);
-    decodedToken = jwt.verify(token, 'somesupersecretkey');
+    let decodedToken = jwt.verify(token, 'somesupersecretkey');
     console.log(`Decoded token is:${decodedToken}`);
+    req.isAuth = true;
+    req.userId = decodedToken.userId;
+    next();
   } catch (err) {
     req.isAuth = false;
     return next();
   }
-  if (!decodedToken) {
-    req.isAuth = false;
-    return next();
-  }
-  // finally authorized
-  req.isAuth = true;
-  req.userId = decodedToken.userId;
-  next();
 };
