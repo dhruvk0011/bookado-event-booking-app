@@ -41,6 +41,7 @@ mongoose
   )
   .then(() => {
     app.listen(8000);
+    console.log("Server started!!")
   })
   .catch((err) => {
     console.log(err);
